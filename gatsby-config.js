@@ -13,6 +13,12 @@ module.exports = {
     subtitle: 'Gatsby-Starman',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-netlify',
