@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby-Starman-Starter',
+    title: 'CaptStarman.io',
     author: {
       name: 'Colin Smith',
       email: 'cmsgoboston41@gmail.com',
