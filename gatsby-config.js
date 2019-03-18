@@ -14,6 +14,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background: `#ddd`,
+        theme_color: `#005`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        include_favicon: true,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
