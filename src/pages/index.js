@@ -2,11 +2,18 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { rhythm } from '../utils/typography'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
+      <SEO
+        title = "Main Index"
+        keywords = {
+          [`blog`, `gatsby`, `javascript`, `react`, `redux`, `graphql`, `netlify`, `relay`]
+        }
+      />
       <div>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
