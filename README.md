@@ -1,5 +1,7 @@
 # react-gatsby-starman-blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45c824ef-d11b-4b61-b0bf-2a00e8ac91d2/deploy-status)](https://app.netlify.com/sites/festive-visvesvaraya-a91ac4/deploys)
+
 > React Gatsby Starman Blog
 
 Gatsby Starter Powered By:
