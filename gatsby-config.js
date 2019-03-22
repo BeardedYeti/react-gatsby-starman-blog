@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'CaptStarman.io',
+    description: 'Blog/Portfolio Gatsby.js Starter',
     author: {
       name: 'Colin Smith',
       email: 'cmsgoboston41@gmail.com',
@@ -13,6 +14,7 @@ module.exports = {
     subtitle: 'Gatsby-Starman',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -26,6 +28,7 @@ module.exports = {
         include_favicon: true,
       }
     },
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
