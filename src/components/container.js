@@ -3,10 +3,10 @@ import containerStyles from "./container.module.css"
 
 export default ({
   children
-}) => ( <
-  div className = {
+}) => ( 
+  <div className = {
     containerStyles.container
   } > {
     children
-  } < /div>
+  } </div>
 )

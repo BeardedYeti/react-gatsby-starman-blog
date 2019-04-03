@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 import { rhythm } from '../utils/typography'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 export default ({ data }) => {
   console.log(data)

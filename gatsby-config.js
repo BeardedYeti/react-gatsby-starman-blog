@@ -6,7 +6,7 @@ module.exports = {
       name: 'Colin Smith',
       email: 'cmsgoboston41@gmail.com',
       telegram: '#',
-      twitter: '@thecolinsmith',
+      twitter: '@CaptStarman',
       github: 'BeardedYeti',
       rss: '#',
       vk: '#'
