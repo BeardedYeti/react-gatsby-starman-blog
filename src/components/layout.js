@@ -41,11 +41,11 @@ export default ({ children }) => (
             <ul style={{ listStyle: `none`, float: `right` }}>
               <ListLink to="/"> Home </ListLink>
               <ListLink to="/about/"> About </ListLink>
+              <ListLink to="/projects/"> Projects </ListLink>
               <ListLink to="/contact/"> Contact </ListLink>
             </ul>
           </header>
           {children}
-          <p>{data.site.siteMetadata.Author}</p>
           <Footer 
             github={data.site.siteMetadata.author.github} 
             twitter={data.site.siteMetadata.author.twitter} 

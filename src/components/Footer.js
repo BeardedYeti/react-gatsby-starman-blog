@@ -21,16 +21,14 @@ class Footer extends React.Component {
           rel="noopener noreferrer"
         >
           <FaTwitter />
-        </a>{' '}
-        &bull;{' '}
+        </a>
         <a
           href={'https://github.com/' + this.props.github}
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub />
-        </a>{' '}
-        &bull;{' '}
+        </a>
       </footer>
     );
   }
