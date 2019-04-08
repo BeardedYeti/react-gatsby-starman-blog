@@ -2,6 +2,11 @@
 title: Space space space...
 author: Colin Smith
 date: '2019-03-17'
+description: Space is a big place. Learn from the best about the big black thing above us.
+tags:
+  - Space
+  - Science
+  - Winning
 ---
 If you want to learn about space, you gotta learn about the planets. If you want to learn about the planets then watch this video...
 
