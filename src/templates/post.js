@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
-import { formatPostDate } from '../utils/helpers'
+import { formatPostDate, formatReadingTime } from '../utils/helpers'
 import SEO from '../components/SEO'
 
 export default ({ data }) => {
@@ -21,7 +21,8 @@ export default ({ data }) => {
                 {post.frontmatter.title}
               </h1>
               <p>
-                {formatPostDate(post.frontmatter.date)}
+								{formatPostDate(post.frontmatter.date)}
+								{` • ${formatReadingTime(post.timeToRead)}`}
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -36,8 +37,11 @@ export const query = graphql`
 		markdownRemark(fields: { slug: { eq: $slug } }) {
 			id
 			html
+			timeToRead
 			frontmatter {
 				title
+				author
+				description
 				date(formatString: "MMMM DD, YYYY")
 			}
 			fields {
