@@ -1,26 +1,47 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Header from '../components/Header';
+import Header from '../components/Header'
+import { formatPostDate } from '../utils/helpers'
+import SEO from '../components/SEO'
 
 export default ({ data }) => {
 	const post = data.markdownRemark
 	return (
 		<Layout>
-			<div>
-				<Header headerText={post.frontmatter.title} arbitraryPhrase="is arbitrary" />
-				<div dangerouslySetInnerHTML={{ __html: post.html }} />
-			</div>
+			<SEO 
+				title={post.frontmatter.title} 
+				description={post.frontmatter.description}
+				slug={post.fields.slug}
+			/>
+			<main>
+          <article>
+            <header>
+              <h1>
+                {post.frontmatter.title}
+              </h1>
+              <p>
+                {formatPostDate(post.frontmatter.date)}
+              </p>
+            </header>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </article>
+      </main>
 		</Layout>
 	)
 }
 
 export const query = graphql`
-	query($slug: String!) {
+	query BlogPostBySlug($slug: String!) {
 		markdownRemark(fields: { slug: { eq: $slug } }) {
+			id
 			html
 			frontmatter {
 				title
+				date(formatString: "MMMM DD, YYYY")
+			}
+			fields {
+				slug
 			}
 		}
 	}
