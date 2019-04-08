@@ -1,6 +1,12 @@
 ---
-title: "Avengers Endgame Trailer"
-date: "2019-03-18"
+title: Avengers Endgame Trailer
+author: Colin Smith
+date: '2019-03-18'
+description: Avengers Endgame is here
+tags:
+  - Avengers
+  - Endgame
+  - Marvel
 ---
 
 It's finally here omg...
