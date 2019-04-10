@@ -11,7 +11,9 @@ module.exports = {
       rss: '#',
       vk: '#'
     },
-    subtitle: 'Gatsby-Starman',
+    siteUrl: 'https://festive-visvesvaraya-a91ac4.netlify.com',
+    subtitle: 'Starman-Blog-Portfolio',
+    disqusShortname: 'https-festive-visvesvaraya-a91ac4-netlify-com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -87,6 +89,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-fastclick`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

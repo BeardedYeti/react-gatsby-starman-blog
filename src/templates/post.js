@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
 import { formatPostDate, formatReadingTime } from '../utils/helpers'
+import Comments from '../components/Comments'
 import SEO from '../components/SEO'
 
 export default ({ data }) => {
@@ -25,8 +26,11 @@ export default ({ data }) => {
 								{` • ${formatReadingTime(post.timeToRead)}`}
               </p>
             </header>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          </article>
+						<div dangerouslySetInnerHTML={{ __html: post.html }} />
+						<div>
+							<Comments postNode={post} siteMetadata={data.site.siteMetadata} />
+						</div>
+					</article>
       </main>
 		</Layout>
 	)
@@ -34,6 +38,18 @@ export default ({ data }) => {
 
 export const query = graphql`
 	query BlogPostBySlug($slug: String!) {
+		site {
+      siteMetadata {
+        title
+        subtitle
+        author {
+          name
+          twitter
+        }
+        disqusShortname
+        siteUrl
+      }
+    }
 		markdownRemark(fields: { slug: { eq: $slug } }) {
 			id
 			html

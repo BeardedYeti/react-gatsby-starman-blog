@@ -3848,6 +3848,10 @@ es-to-primitive@^1.2.0:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
+es6-error@^4.0.2:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/es6-error/-/es6-error-4.1.1.tgz#9e3af407459deed47e9a91f9b885a84eb05c561d"
+
 es6-promise@^3.0.2:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
@@ -4803,6 +4807,16 @@ gatsby-link@^2.0.15:
     "@reach/router" "^1.1.1"
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
+
+gatsby-plugin-fastclick@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-fastclick/-/gatsby-plugin-fastclick-1.0.1.tgz#a82fa6825a3ec425cc410aac635a82751c4b407c"
+  dependencies:
+    es6-error "^4.0.2"
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.4"
+    react-fastclick "^3.0.2"
+    read-pkg-up "^2.0.0"
 
 gatsby-plugin-manifest@^2.0.24:
   version "2.0.24"
@@ -9974,6 +9988,10 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
+react-disqus-comments@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-disqus-comments/-/react-disqus-comments-1.4.0.tgz#bf56ff319a35d086f3070d31a4f70ed21ce3a958"
+
 react-dnd-html5-backend@^7.0.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-7.2.0.tgz#4cde55fb690020d98d7b6f3d4400c56b2ae82dfa"
@@ -10011,6 +10029,10 @@ react-emotion@^9.2.5:
 react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
+
+react-fastclick@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-fastclick/-/react-fastclick-3.0.2.tgz#2994c60088cda90b0b2cbfac4b6e7c6bc73d6a3a"
 
 react-frame-component@^4.0.2:
   version "4.1.0"
