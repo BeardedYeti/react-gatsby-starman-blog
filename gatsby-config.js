@@ -15,7 +15,14 @@ module.exports = {
     subtitle: 'Starman-Blog-Portfolio',
     disqusShortname: 'https-festive-visvesvaraya-a91ac4-netlify-com',
   },
-  plugins: [
+  plugins: [    
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -39,20 +46,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`,
-      },
-    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
