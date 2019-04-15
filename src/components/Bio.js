@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 import { rhythm } from '../utils/typography'
 import Img from 'gatsby-image'
 
+      <div
 class Content extends React.Component {
 		render() {
 				return (
