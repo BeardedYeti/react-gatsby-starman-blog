@@ -4,12 +4,15 @@ module.exports = {
     description: 'Blog/Portfolio Gatsby.js Starter',
     author: {
       name: 'Colin Smith',
+      jobTitle: 'Full Stack Developer',
+      description: "Avid video game, film, books, and pop culture nerd with an affinity for nature, travel, and hiking. Also, build things, and crush bugs!",
+      aboutPic: 'src/image/about-pic.jpg',
       email: 'cmsgoboston41@gmail.com',
       telegram: '#',
       twitter: '@CaptStarman',
       github: 'BeardedYeti',
       rss: '#',
-      vk: '#'
+      vk: '#',
     },
     siteUrl: 'https://festive-visvesvaraya-a91ac4.netlify.com',
     subtitle: 'Starman-Blog-Portfolio',
