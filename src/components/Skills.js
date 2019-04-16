@@ -1,7 +1,7 @@
 import React from 'react';
 import { rhythm } from '../utils/typography'
 
-class Skill extends React.Component {
+class Skills extends React.Component {
   render() {
     return this.props.skills.map(i => (
 					<li>
@@ -12,4 +12,4 @@ class Skill extends React.Component {
   }
 }
 
-export default Skill;
+export default Skills;
