@@ -12,11 +12,14 @@ const projects = [
     description: 'Personal blog and portfolio site built with Gatsbyjs and React',
     image: '',
     tags: [
-      'React',
-      'Gatsby',
-      'GraphQL',
-      'Redux',
-      'JavaScript'
+      'react',
+      'gatsbyjs',
+      'graphql',
+      'redux',
+      'babel',
+      'webpack',
+      'javascript',
+      'nodejs'
     ]
   },
   {
@@ -25,10 +28,13 @@ const projects = [
     description: 'GraphQL API Gateway for Shawmut Communications Group that interfaces with an enterprise system, and acts as the data layer for a microservices',
     image: '',
     tags: [
-      'GraphQL',
-      'Apollo.js',
-      'JWT',
-      'JavaScript'
+      'graphql',
+      'apollojs',
+      'webpack',
+      'babel',
+      'express',
+      'javascript',
+      'nodejs'
     ]
   },
 ]

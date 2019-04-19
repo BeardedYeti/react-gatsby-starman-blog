@@ -1,6 +1,7 @@
 import React from 'react';
 import { rhythm } from '../utils/typography'
 import Img from 'gatsby-image'
+import Tags from './Tags'
 
 class Projects extends React.Component {
   render() {
@@ -11,8 +12,8 @@ class Projects extends React.Component {
                     <p>{i.description}</p>
                     <div>
                         {i.tags.map(e => (
-							<span>{e}</span>
-						))}
+                          <Tags icon={e} />
+                        ))}
                     </div>
                 </a>
 
