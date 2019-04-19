@@ -12,9 +12,9 @@ import Interests from '../components/Interests'
 
 // Add Skills Here
 const skills = [
-  {skill: 'JavaScript', value: 4}, 
-  {skill: 'CSS3', value: 5}, 
-  {skill: 'HTML5', value: 5}
+  {skill: 'JavaScript', value: 4, color: '#f0db4f'}, 
+  {skill: 'CSS3', value: 5, color: '#0396DE'}, 
+  {skill: 'HTML5', value: 5, color: '#DD4A25'}
 ]
 
 const degrees = [
