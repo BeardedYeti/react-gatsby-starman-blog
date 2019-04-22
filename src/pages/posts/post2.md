@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Avengers Endgame Trailer
 author: Colin Smith
 date: '2019-03-18'

@@ -14,7 +14,9 @@ class Skills extends React.Component {
 							padding: `10px`,
 							color: `white`,
 							width: `${i.value}0%`,
-							backgroundColor: `${i.color}` 
+							backgroundColor: `${i.color}`,
+							animationName: `fill`,
+							animationDuration: `2s` 
 						}} className={i.value}>{i.value}</p>
 					</li>
 		))

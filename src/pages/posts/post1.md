@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Space space space...
 author: Colin Smith
 date: '2019-03-17'

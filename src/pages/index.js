@@ -40,16 +40,24 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {
+    allMarkdownRemark(
+      sort: {
         fields: [frontmatter___date],
         order: DESC
-      }) {
+      }
+      filter: {
+        fileAbsolutePath: {
+          regex: "/(posts)/.*\\.md$/"
+        }
+      }
+    ) {
       totalCount
       edges {
         node {
           id
           timeToRead
           frontmatter {
+            templateKey
             title
             date(formatString: "MMMM DD, YYYY")
           }
