@@ -30,8 +30,6 @@ class Content extends React.Component {
 		}
 	}
 
-
-
 const query = graphql `
   query {
     bioPic: file(relativePath: {eq: "images/bio-pic.jpg"}) {

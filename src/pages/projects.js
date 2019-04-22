@@ -4,14 +4,13 @@ import { Link } from 'gatsby'
 import Projects from '../components/Projects'
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
-import demostar from '../images/demo-star.jpg'
 
 const projects = [
   {
     title: 'react-gatsby-starman-blog',
     url: 'https://github.com/BeardedYeti/react-gatsby-starman-blog',
     description: 'Personal blog and portfolio site built with Gatsbyjs and React',
-    image: {demostar},
+    image: '{this.props.data.image1.childImageSharp.fluid}',
     tags: [
       'react',
       'gatsbyjs',
@@ -27,7 +26,7 @@ const projects = [
     title: 'Shawmut GraphQL API',
     url: 'https://api.shawmutdelivers.com',
     description: 'GraphQL API Gateway for Shawmut Communications Group that interfaces with an enterprise system, and acts as the data layer for a microservices',
-    image: '',
+    image: '{this.props.data.image2.childImageSharp.fluid}',
     tags: [
       'graphql',
       'apollojs',

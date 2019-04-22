@@ -1,21 +1,16 @@
 import React from 'react';
-import { rhythm } from '../utils/typography'
+import {rhythm} from '../utils/typography'
+import { graphql, StaticQuery } from "gatsby"
 import Tags from './Tags'
-import LazyLoad from 'react-lazy-load';
+import Img from 'gatsby-image'
 
-class Projects extends React.Component {
+class Project extends React.Component {
+
   render() {
     return this.props.projects.map(i => (
             <div>
                 <a href={i.url}>
-                    <LazyLoad 
-                      width={100}
-                      height={100}
-                      debounce={false}
-                      offsetVertical={500}
-                    >
-                      <img src={i.image} alt={i.title}/>
-                    </LazyLoad>
+                    <Img fluid={i.image} />
                     <h5>{i.title}</h5>
                     <p>{i.description}</p>
                     <div>
@@ -30,4 +25,28 @@ class Projects extends React.Component {
   }
 }
 
-export default Projects;
+const query = graphql `
+  query {
+    image1: file(relativePath: {eq: "images/demo-star.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 300, quality: 100) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+    image2: file(relativePath: {eq: "images/shawmut-api.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 300, quality: 100) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+  }
+`
+
+export default ({projects}) => <StaticQuery
+	query={query}
+  render={data => <Project data={data} projects={projects} />}
+/>
