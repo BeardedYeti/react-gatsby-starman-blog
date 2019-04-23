@@ -6,8 +6,16 @@ import SEO from '../components/SEO'
 
 export default ({ data }) => (
   <Layout>
-    <SEO title="projects" keywords={[`Colin`, `Smith`, `Colin Smith`, `projects`, `developer`, `portfolio`]}/>
-    <Projects projects={data} />
+    <main style={{ 
+      minHeight: `100vh`,
+      overflow: `hidden`,
+      display: `block`,
+      position: `relative`,
+      paddingBottom: `100px`
+    }}>
+      <SEO title="projects" keywords={[`Colin`, `Smith`, `Colin Smith`, `projects`, `developer`, `portfolio`]}/>
+      <Projects projects={data} />
+    </main>
   </Layout>
 )
 

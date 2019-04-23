@@ -41,6 +41,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Fjalla One', 'Noto Sans', 'Orbitron']
+        }
+      }
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
@@ -86,12 +94,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-fastclick`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-netlify',

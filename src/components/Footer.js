@@ -4,6 +4,7 @@ import {
 	FaTwitter
 } from 'react-icons/fa'
 import Bio from './Bio'
+import { auto } from 'eol';
 
 let now = new Date();
 const year = now.getFullYear();
@@ -11,13 +12,18 @@ class Footer extends React.Component {
   render() {
     return (
 			<footer>
-        <div className="footer-name">
+        <div style={{
+          textAlign: `center`
+        }}>
           <Bio             
             twitter={this.props.twitter} 
-            name={this.props.name}/>
+            name={this.props.name}
+          />
         </div>
-        <div className="footer-copyright">
-          <p>Copyright (c) {year} • {this.props.name}</p>
+        <div style={{
+          textAlign: `center`
+        }}>
+          <p>Copyright © {year} • {this.props.name}</p>
           <a
             href={'https://mobile.twitter.com/' + this.props.twitter}
             target="_blank"

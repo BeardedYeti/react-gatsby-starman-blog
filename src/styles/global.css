@@ -1,3 +1,88 @@
 html {
   background-color: #fff;
 }
+
+* {
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 3.16rem;
+  margin-bottom: 0.79rem;
+}
+
+h1 {
+  font-family: 'Orbitron';
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Orbitron';
+  text-decoration: none;
+}
+
+h3 {
+  font-family: 'Fjalla One';
+  text-decoration: none;
+}
+
+h4 {
+  font-family: 'Orbitron';
+  text-decoration: none;
+}
+
+h5 {
+  font-family: 'Orbitron';
+  text-decoration: none;
+}
+
+h6 {
+  font-family: 'Orbitron';
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Noto Sans';
+  text-decoration: none;
+}
+
+ul {
+  font-family: 'Noto Sans';
+  text-decoration: none;
+}
+
+ol {
+  font-family: 'Noto Sans';
+  text-decoration: none;
+}
+
+li {
+  font-family: 'Noto Sans';
+  text-decoration: none;
+}
+
+a {
+  font-family: 'Noto Sans';
+  text-decoration: none;
+}
+
+label {
+    font-family: 'Noto Sans';
+}
+
+input {
+  font-family: 'Noto Sans';
+}
+
+blockquote {
+  font-style: "italic";
+  border-left: 0.1875rem solid #551a8b;
+  color: gray;
+  padding-left: 0.1875rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}

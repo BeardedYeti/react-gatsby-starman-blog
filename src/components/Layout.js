@@ -1,9 +1,5 @@
 import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
-import {
-  FaGithub,
-  FaTwitter
-} from 'react-icons/fa';
 import Footer from '../components/Footer'
 
 let now = new Date();
@@ -33,13 +29,13 @@ export default ({ children }) => (
       `
     }
     render={(data) => (
-        <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
+        <div style={{ margin: `3rem auto`, maxWidth: 750, padding: `0 1rem` }}>
           <header style={{ marginBottom: `1.5rem` }}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-              <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
+              <h2 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h2>
             </Link>  
-            <ul style={{ listStyle: `none`, float: `right` }}>
-              <ListLink to="/"> Home </ListLink>
+            <ul style={{ listStyle: `none`, float: `right`, marginTop: 0, marginLeft: `1.58rem`, marginBottom: `1.58rem`}}>
+              <ListLink to="/"> Blog </ListLink>
               <ListLink to="/about/"> About </ListLink>
               <ListLink to="/projects/"> Projects </ListLink>
               <ListLink to="/contact/"> Contact </ListLink>
@@ -50,6 +46,11 @@ export default ({ children }) => (
             github={data.site.siteMetadata.author.github} 
             twitter={data.site.siteMetadata.author.twitter} 
             name={data.site.siteMetadata.author.name}
+            style={{ 
+              position: `absolute`, 
+              bottom: `0`, 
+              width: `100%`
+            }}
           />
         </div>
     )}

@@ -1,5 +1,4 @@
 import React from 'react';
-import { rhythm } from '../utils/typography'
 
 class Skills extends React.Component {
   render() {

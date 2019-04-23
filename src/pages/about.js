@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
 import Img from 'gatsby-image'
@@ -79,7 +78,13 @@ const interests = [
 export default ({ data }) => (
   <Layout>
     <SEO title="About" keywords={[`Colin`, `Smith`, `Colin Smith`, `bio`, `developer`]}/>
-    <main>
+    <main style={{ 
+      minHeight: `100vh`,
+      overflow: `hidden`,
+      display: `block`,
+      position: `relative`,
+      paddingBottom: `100px`
+    }}>
       <div className="about-header">
         <Img fixed={data.aboutPic.childImageSharp.fixed} />
         <h2>{data.site.siteMetadata.author.name}</h2>

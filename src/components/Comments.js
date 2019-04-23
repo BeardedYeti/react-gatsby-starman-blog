@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
+import React, { Component } from 'react'
+import ReactDisqusComments from 'react-disqus-comments'
 
 class Comments extends Component {
   constructor(props) {
@@ -38,4 +38,4 @@ class Comments extends Component {
   }
 }
 
-export default Comments;
+export default Comments

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import { rhythm } from '../utils/typography'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import { formatReadingTime } from '../utils/helpers'
@@ -15,7 +14,13 @@ export default ({ data }) => {
           [`blog`, `gatsby`, `javascript`, `react`, `redux`, `graphql`, `netlify`, `relay`]
         }
       />
-      <main>
+      <main style={{ 
+        minHeight: `100vh`,
+        overflow: `hidden`,
+        display: `block`,
+        position: `relative`,
+        paddingBottom: `100px`
+      }}>
         <div>
           <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
           {data.allMarkdownRemark.edges.map(({ node }) => (

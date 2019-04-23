@@ -1,27 +1,27 @@
 import React from 'react';
 import { graphql, StaticQuery } from "gatsby"
-import { rhythm } from '../utils/typography'
 import Img from 'gatsby-image'
 
 class Content extends React.Component {
 		render() {
 				return (
-					<div
-						style={{
-							display: 'flex',
-						}}
-					>
+					<div>
 						<Img 
 							fixed={this.props.data.bioPic.childImageSharp.fixed} 
 							style={{
-								marginRight: rhythm(1 / 2),
-								marginBottom: 0,
-								width: rhythm(2),
-								height: rhythm(2),
+								marginRight: `0.79rem`,
+								marginBottom: `0`,
+								width: `3.16rem`,
+								height: `3.16rem`,
 								borderRadius: '50%',
+								display: `inline-block`
 							}}
 						/>
-						<p style={{ maxWidth: 310 }}>
+						<p style={{ 
+							maxWidth: 310,
+							display: `inline-block`,
+							textAlign: `left` 
+						}}>
 							Personal blog and portfolio of <a href={'https://mobile.twitter.com/' + this.props.twitter}>{this.props.name}</a>.
 							Drink coffee, and be excellent to each other!
 						</p>

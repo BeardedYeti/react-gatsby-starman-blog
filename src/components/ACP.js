@@ -1,5 +1,4 @@
-import React from 'react';
-import { rhythm } from '../utils/typography'
+import React from 'react'
 
 class ACP extends React.Component {
   render() {
@@ -12,4 +11,4 @@ class ACP extends React.Component {
   }
 }
 
-export default ACP;
+export default ACP

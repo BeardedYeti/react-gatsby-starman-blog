@@ -1,5 +1,4 @@
-import React from 'react';
-import { rhythm } from '../utils/typography'
+import React from 'react'
 
 class Experience extends React.Component {
   render() {
@@ -16,4 +15,4 @@ class Experience extends React.Component {
   }
 }
 
-export default Experience;
+export default Experience

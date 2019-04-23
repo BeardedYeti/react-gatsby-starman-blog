@@ -1,5 +1,4 @@
 import React from 'react';
-import {rhythm} from '../utils/typography'
 import Tags from './Tags'
 import Img from 'gatsby-image'
 
