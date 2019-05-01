@@ -13,7 +13,10 @@ import Interests from '../components/Interests'
 const skills = [
   {skill: 'JavaScript', value: 4, color: '#f0db4f'}, 
   {skill: 'CSS3', value: 5, color: '#0396DE'}, 
-  {skill: 'HTML5', value: 5, color: '#DD4A25'}
+  {skill: 'HTML5', value: 5, color: '#DD4A25'},
+  {skill: 'React', value: 2, color: '#61DAFB'},
+  {skill: 'Python', value: 1, color: '#FFDE56'},
+  {skill: 'PHP', value: 2, color: '#8892BF'},
 ]
 
 const degrees = [
@@ -57,22 +60,32 @@ const acps = [
 ]
 
 const interests = [
-  'Software Development',
-  'Woodworking',
-  'Brewing Beer',
-  'Video Games',
-  'Film',
-  'Board Games',
-  'Dungeons & Dragons',
-  'Nature',
-  'Hiking',
-  'Travelling',
-  'Football',
-  'Classic Rock Music',
-  'Hard Rock Music',
-  'Indie Folk Music',
-  'Folk Rock Music',
-  'Classical Music'
+  'Software Development 💻',
+  'Woodworking 🔨',
+  'Brewing Beer 🍺',
+  'Video Games 🎮',
+  'Film 🎬',
+  'Board Games 🎲',
+  'Comics 💥',
+  'Dungeons & Dragons 🐲',
+  'Nature 🌱',
+  'Hiking 🌄',
+  'Travelling ✈️',
+  'Football 🏈',
+  'Art 🎨',
+  'Fantasy Literature 🏰',
+  'Sci Fi Literature 🚀',
+  'Fiction Literature 📚',
+  'History 🌎',
+  'Classic Rock Music 🎸',
+  'Hard Rock Music 🎸',
+  'Indie Folk Music 🎻',
+  'Classical Music 🎼',
+  'Space 🌌',
+  'Dogs 🐕',
+  'Cooking 🍲',
+  'Food 🍓',
+  'Coffee ☕️'
 ]
 
 export default ({ data }) => (
@@ -80,16 +93,32 @@ export default ({ data }) => (
     <SEO title="About" keywords={[`Colin`, `Smith`, `Colin Smith`, `bio`, `developer`]}/>
     <main style={{ 
       minHeight: `100vh`,
-      overflow: `hidden`,
       display: `block`,
       position: `relative`,
       paddingBottom: `100px`
     }}>
-      <div className="about-header">
-        <Img fixed={data.aboutPic.childImageSharp.fixed} />
-        <h2>{data.site.siteMetadata.author.name}</h2>
-        <h3>{data.site.siteMetadata.author.jobTitle}</h3>
-        <p>{data.site.siteMetadata.author.description}</p>
+      <div className="about-header" style={{
+
+      }}>
+        <span style={{
+          display: `inline-block`,
+          verticalAlign: `top`,
+          margin: `1rem`,
+          padding: `1rem`
+        }}>
+          <Img style={{
+            textAlign: `center`
+          }} fixed={data.aboutPic.childImageSharp.fixed} />
+        </span>
+        <span style={{
+          display: `inline-block`,
+          width: `65%`,
+          verticalAlign: `top`
+        }}>
+          <h2>{data.site.siteMetadata.author.name}</h2>
+          <h3>{data.site.siteMetadata.author.jobTitle}</h3>
+          <p>{data.site.siteMetadata.author.description}</p>
+        </span>
       </div>
       <div className="about-skills">
         <h4>Skills: </h4>

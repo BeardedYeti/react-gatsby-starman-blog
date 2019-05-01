@@ -5,18 +5,19 @@ class Skills extends React.Component {
     return this.props.skills.map(i => (
 					<li style={{ 
 						width: `100%`, 
-						backgroundColor: `#ddd` 
+						listStyleType: `none`
 					}} className="skill">
-						<h5>{i.skill}</h5>
 						<p style={{ 
 							textAlign: `right`, 
 							padding: `10px`,
-							color: `white`,
+							color: `#000`,
 							width: `${i.value}0%`,
 							backgroundColor: `${i.color}`,
 							animationName: `fill`,
-							animationDuration: `2s` 
-						}} className={i.value}>{i.value}</p>
+							animationDuration: `5s`,
+							margin: `0.25em`,
+							borderRadius: `0px 5px 5px 0px`
+				}} className={i.value}>{i.skill} {i.value}</p>
 					</li>
 		))
   }
