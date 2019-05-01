@@ -12,12 +12,16 @@ export default () => (
       }
     />
     <main style={{ 
-      overflow: `hidden`,
       display: `block`,
       position: `relative`,
-      paddingBottom: `100px`
+      paddingBottom: `5rem`,
+      paddingTop: `1rem`
     }}>
-      <h4> I 'd love to talk! Please fill out the form below</h4>
+      <h4 style={{
+        textAlign: `center`,
+        margin: `1rem`,
+        padding: `1rem`
+      }}> I 'd love to talk! Please fill out the form below</h4>
       <Contact />
     </main>    
   </Layout>
